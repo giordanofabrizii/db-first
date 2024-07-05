@@ -1,0 +1,17 @@
+n_telaio        VARCHAR(25)                     NOT_NULL                UNIQUE
+targa           VARCHAR(7)                      NULL                    UNIQUE
+marca           VARCHAR(15)                     NOT_NULL    
+modello         VARCHAR(25)                     NOT_NULL
+versione        VARCHAR(10)                     NULL
+anno            YEAR                            NOT_NULL
+colore          VARCHAR(10)                     NOT_NULL
+alimentazione   VARCHAR(10)                     NOT_NULL
+cilindrata      SMALLINT(8000)      UNSIGNED    NOT_NULL
+cavalli         SMALLINT(2000)      UNSIGNED    NOT_NULL
+cambio          VARCHAR(10)                     NOT_NULL
+marce           TINYINT(10)         UNSIGNED    NOT_NULL
+peso            SMALLINT(3000)      UNSIGNED    NOT_NULL
+id              INT                 UNSIGNED    NOT_NULL                UNIQUE  AUTO_INCREMENT
+prezzo          INT                 UNSIGNED    NOT_NULL
+n_km            INT                 UNSIGNED    NOT_NULL    DEFAULT(0)
+venduta         BOOLEAN                         NOT_NULL    DEFAULT(0)
